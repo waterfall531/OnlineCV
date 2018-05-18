@@ -167,19 +167,24 @@
             <div class="col-sm">
                 <ul>
                     Languahes:
-                    <li>PHP
+                    <li>
+                        <span>PHP</span>
                         <span id="spanPhp" score="5"></span>
                     </li>
-                    <li>MSSQL
+                    <li>
+                        <span>MSSQL</span>
                         <span id="spanMssql" score="5"></span>
                     </li>
-                    <li>JavaScript
+                    <li>
+                        <span>JavaScript</span>
                         <span id="spanJs" score="5"></span>
                     </li>
-                    <li>NodeJS
+                    <li>
+                        <span>NodeJS</span>
                         <span id="spanNode" score="4"></span>
                     </li>
-                    <li>Python
+                    <li>
+                        <span>Python</span>
                         <span id="spanPython" score="3"></span>
                     </li>
                 </ul>
@@ -195,7 +200,7 @@
     </div>
     <script>
         $('.Skills li span').each(function (item) {
-            $(item).width($(item).attr('score') * 20 + '%');
+            $(item).attr('flex', $(item).attr('score'));
         });
     </script>
 </div>

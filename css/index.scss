@@ -1,0 +1,10 @@
+.skills ul{
+  li {
+    display: flex;
+    span {
+      justify-content:space-between;
+      flex: 1 0 5;
+    }
+    background: #77be94;
+  }
+}
